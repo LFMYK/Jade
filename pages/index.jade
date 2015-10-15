@@ -10,22 +10,20 @@ block content
 			p Bootstrap中的导航组件分享了常用的标记和样式，从基本的.nav类到激活和禁用的状态。交换修饰类，可以在各种样式之间切换。
 			h2 简易导航
 			h3 纵向
-			
-			ul
-				li: a(href=)
-
-
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Another link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-				</ul>
+			.row.bd-example
+				ul.nav
+					li.nav-item
+						a.nav-link(href='#') 链接1
+				ul.nav
+					li.nav-item
+						a.nav-link.active(href='#') 活跃链接2
+				ul.nav
+					li.nav-item
+						a.nav-link.disabled(href='#') 无效链接3
+			h3 横向
+			.row.bd-example
+				ul.nav
+					li.nav-item
+						a.nav-link(href='#') 链接1&nbsp;|&nbsp;
+						a.nav-link.active(href='#') 活跃链接2&nbsp;|&nbsp;
+						a.nav-link.disabled(href='#') 无效链接3&nbsp;|&nbsp;
